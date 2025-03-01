@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#d8bda9] p-6">
+    <!-- Header -->
+    <div class="bg-white p-4 rounded-lg flex justify-between items-center shadow-md">
+        <h1 class="text-xl font-bold">Dev<span class="text-blue-500">Board</span></h1>
+        <div class="flex items-center gap-4">
+            <span class="text-lg">23</span>
+            <div class="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="grid grid-cols-4 gap-6 mt-6">
+        <!-- Left Panel -->
+        <div class="col-span-3">
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Task Assigned -->
+                <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                    <input type="checkbox" checked class="mr-2">
+                    <span class="text-lg font-medium">Task Assigned</span>
+                    <span class="ml-auto text-lg font-bold">6</span>
+                </div>
+                
+                <!-- Discover Card -->
+                <div class="bg-blue-500 text-white p-4 rounded-lg shadow-md flex items-center">
+                    <span class="text-lg font-medium">Discover Something New Today!</span>
+                </div>
+                
+                <!-- Date Card -->
+                <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                    <span class="text-lg">Fri Feb 28 2025</span>
+                </div>
+            </div>
+            
+            <!-- Cards Section -->
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold">Shop Ease</h3>
+                    <p class="font-semibold">Fix Mobile Button Issue</p>
+                    <p class="text-gray-500">A card component has a figure, a body part...</p>
+                    <p class="text-sm text-gray-600">Deadline: 21 March 2025</p>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded">Completed</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold">Soft Pay</h3>
+                    <p class="font-semibold">Add Pay Success Modal</p>
+                    <p class="text-gray-500">A card component has a figure, a body part...</p>
+                    <p class="text-sm text-gray-600">Deadline: 25 March 2025</p>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded">Completed</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold">Meta</h3>
+                    <p class="font-semibold">Add new reaction</p>
+                    <p class="text-gray-500">A card component has a figure, a body part...</p>
+                    <p class="text-sm text-gray-600">Deadline: 31 March 2025</p>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded">Completed</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold">Programming Hero</h3>
+                    <p class="font-semibold">Fix Video Loading Issue</p>
+                    <p class="text-gray-500">A card component has a figure, a body part...</p>
+                    <p class="text-sm text-gray-600">Deadline: 21 March 2025</p>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded">Completed</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold">Google LLC</h3>
+                    <p class="font-semibold">Integrate AI Search</p>
+                    <p class="text-gray-500">A card component has a figure, a body part...</p>
+                    <p class="text-sm text-gray-600">Deadline: 01 April 2025</p>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded">Completed</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="font-bold">Polygon Tech</h3>
+                    <p class="font-semibold">Review Ami Probashi Site</p>
+                    <p class="text-gray-500">A card component has a figure, a body part...</p>
+                    <p class="text-sm text-gray-600">Deadline: 05 May 2025</p>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded">Completed</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <h2 class="text-lg font-bold">Activity Log</h2>
+            <button class="mt-4 px-3 py-1 bg-blue-500 text-white rounded">Clear History</button>
+        </div>
+    </div>
+</body>
+</html>
