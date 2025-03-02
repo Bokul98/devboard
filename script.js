@@ -3,14 +3,11 @@ function changeBackgroundColor() {
     document.body.style.backgroundColor = randomColor;
 }
 
-// Get the current date
 const currentDate = new Date();
 
-// Format the date (e.g., "Feb 28 2025")
 const options = { month: "short", day: "2-digit", year: "numeric" };
 const formattedDate = currentDate.toLocaleDateString("en-US", options);
 
-// Set the formatted date in the span
 document.getElementById("current-date").textContent = formattedDate;
 
 //========================================
@@ -34,14 +31,14 @@ buttons.forEach(button => {
             const taskTitle = this.closest(".task").querySelector(".task-title").textContent;
             const currentTime = new Date().toLocaleTimeString();
 
-            // Show alert
+
             alert("Board updated successfully");
 
-            // Update numbers
+
             totalTasksEl.textContent = parseInt(totalTasksEl.textContent) + 1;
             remainingTasksEl.textContent = parseInt(remainingTasksEl.textContent) - 1;
 
-            // Add to history
+
             const historyItem = document.createElement("div");
             historyItem.classList.add("bg-slate-200", "my-2", "rounded-md", "p-2");
             historyItem.innerHTML = `<p>You Have Completed The Task ${taskTitle} at ${currentTime}</p>`;
