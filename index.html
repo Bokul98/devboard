@@ -15,7 +15,7 @@
     </script>
   </head>
 
-  <body class="bg-[#d8bda9] p-6">
+  <body class="bg-[#f4f7ff] p-6">
     <!-- Header Section -->
     <div
       class="bg-white p-4 rounded-lg flex justify-between items-center shadow-md"
@@ -46,200 +46,199 @@
     </div>
 
     <!-- Main Content -->
-    <div class="grid grid-cols-4 gap-6 mt-6">
-      <!-- Left Panel -->
-      <div class="col-span-3">
-        <div class="grid grid-cols-3 gap-4">
-          <!-- Task Assigned -->
-          <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md flex items-center">
-            <input type="checkbox" checked class="w-6 h-6 mr-4" />
-            <div class="">
-              <span class="font-medium block">Task Assigned</span>
-              <span id="remaining-tasks" class="ml-auto text-2xl font-bold"
-                >6</span
-              >
+    <div class="mx-auto my-5">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-9 bg-white rounded-lg p-6">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="flex items-center col-span-3 bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+              <div class="flex items-center">
+                <input type="checkbox" checked class="w-6 h-6 mr-4" />
+                <div class="">
+                  <span class="font-medium block">Task Assigned</span>
+                  <span id="remaining-tasks" class="ml-auto text-2xl font-bold">6</span>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- Discover Card -->
-          <div
-            class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white p-4 rounded-lg shadow-md">
-            <a href="blog.html" class="flex items-center">
-              <div class="mr-2"><img src="assets/board.png" alt="" /></div>
-            <span class="text-lg font-medium">Discover Something New Today!</span>
-            </a>
-          </div>
 
-          <!-- Date Card -->
-          <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md flex items-center">
-            <div class="bg-[#F4F7FF] rounded-full p-2 mr-2">
-              <img src="assets/calender.png" alt="" />
+            <div class="col-span-6 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] text-white p-4 rounded-lg shadow-md">
+              <a href="blog.html" class="flex items-center">
+                <div class="mr-2"><img src="assets/board.png" alt="" /></div>
+                <span class="text-lg font-medium">Discover Something New Today!</span>
+              </a>
             </div>
-            <h5 class="font-medium">
-              Wed,
-              <span id="current-date" class="block text-[#00303C] font-bold text-lg"></span>
-            </h5>
-          </div>
-        </div>
 
-        <!-- Cards Section -->
-        <div class="grid grid-cols-3 gap-4 mt-4">
-          <div class="task bg-white p-4 rounded-lg shadow-md">
-            <h6 class="font-medium pb-6 pl-4">Shop Ease</h6>
-            <h2 class="task-title font-bold text-[#00303C] text-xl pb-8">
-              Fix Mobile Button Issue
-            </h2>
-            <p class="inline pl-4">
-              Debug using Chrome DevTools, check for
-              <span class="relative after:content-['...'] pl-4"
-                >overlapping</span
-              >
-            </p>
-            <div class="flex justify-between items-center pt-11">
-              <p class="text-sm text-gray-600">
-                Deadline:
-                <span class="block text-lg text-[#00303C]">31 March 2025</span>
-              </p>
-              <button
-                class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Completed
-              </button>
+
+            <div class="flex items-center bg-[#F4F7FF] p-4 rounded-lg shadow-md col-span-3">
+              <div class="flex items-center">
+                <div class="bg-[#F4F7FF] rounded-full p-2 mr-2">
+                  <img src="assets/calender.png" alt="" />
+                </div>
+                <h5 class="font-medium">
+                  Wed,
+                  <span id="current-date" class="block text-[#00303C] font-bold text-lg"></span>
+                </h5>
+              </div>
             </div>
-          </div>
 
-          <div class="task bg-white p-4 rounded-lg shadow-md">
-            <h6 class="font-medium pb-6 pl-4">CloudSync</h6>
-            <h2 class="task-title font-bold text-[#00303C] text-xl pb-8">Add Dark Mode</h2>
-            <p class="inline pl-4">
-              Store the user's preference in localStorage,
-              <span class="relative after:content-['...'] pl-4"
-                >update CSS</span
-              >
-            </p>
-            <div class="flex justify-between items-center pt-11">
-              <p class="text-sm text-gray-600">
-                Deadline:
-                <span class="block text-lg text-[#00303C]">31 March 2025</span>
-              </p>
-              <button
-                class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Completed
-              </button>
+            <div class="col-span-4 task bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+              <h6 class="bg-white rounded-lg inline-block font-medium px-2 py-1">Shop Ease</h6>
+                <h2 class="task-title font-bold text-[#00303C] text-xl pb-4 pt-3">
+                  Fix Mobile Button Issue
+                </h2>
+                <p class="bg-white rounded-lg inline-block font-medium p-4">
+                  Debug using Chrome DevTools, check for
+                  <span class="relative after:content-['...'] pl-4">overlapping</span>
+                </p>
+                <div class="flex justify-between items-center pt-11">
+                  <p class="text-sm text-gray-600">
+                    Deadline:
+                    <span class="block text-lg text-[#00303C]">31 March 2025</span>
+                  </p>
+                  <button class="complete-btn bg-blue-500 text-white px-3 py-1 rounded">Completed</button>
+                </div>
             </div>
-          </div>
-
-          <div class="task bg-white p-4 rounded-lg shadow-md">
-            <h6 class="font-medium pb-6 pl-4">SwiftPay</h6>
-            <h2 class="task-title font-bold text-[#00303C] text-xl pb-8">
-              Optimize Home Page
-            </h2>
-            <p class="inline pl-4">
-              Debug using Chrome DevTools, check for
-              <span class="relative after:content-['...'] pl-4"
-                >overlapping</span
-              >
-            </p>
-            <div class="flex justify-between items-center pt-11">
-              <p class="text-sm text-gray-600">
-                Deadline:
-                <span class="block text-lg text-[#00303C]">31 March 2025</span>
-              </p>
-              <button
-                class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Completed
-              </button>
+            <div class="col-span-4">
+              <div class="task bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                <h6 class="bg-white rounded-lg inline-block font-medium px-2 py-1">CloudSync</h6>
+                <h2 class="task-title font-bold text-[#00303C] text-xl pb-4 pt-3">Add Dark Mode</h2>
+                <p class="bg-white rounded-lg inline-block font-medium p-4">
+                  Store the user's preference in localStorage,
+                  <span class="relative after:content-['...'] pl-4"
+                    >update CSS</span
+                  >
+                </p>
+                <div class="flex justify-between items-center pt-11">
+                  <p class="text-sm text-gray-600">
+                    Deadline:
+                    <span class="block text-lg text-[#00303C]">31 March 2025</span>
+                  </p>
+                  <button
+                    class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="task bg-white p-4 rounded-lg shadow-md">
-            <h6 class="font-medium pb-6 pl-4">Meta</h6>
-            <h2 class="task-title font-bold text-[#00303C] text-xl pb-8">
-              Add new emoji 🤲
-            </h2>
-            <p class="inline pl-4">
-              Debug using Chrome DevTools, check for
-              <span class="relative after:content-['...'] pl-4"
-                >overlapping</span
-              >
-            </p>
-            <div class="flex justify-between items-center pt-11">
-              <p class="text-sm text-gray-600">
-                Deadline:
-                <span class="block text-lg text-[#00303C]">31 March 2025</span>
-              </p>
-              <button
-                class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Completed
-              </button>
+            <div class="col-span-4">
+              <div class="task bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                <h6 class="bg-white rounded-lg inline-block font-medium px-2 py-1">SwiftPay</h6>
+                <h2 class="task-title font-bold text-[#00303C] text-xl pb-4 pt-3">
+                  Optimize Home Page
+                </h2>
+                <p class="bg-white rounded-lg inline-block font-medium p-4">
+                  Debug using Chrome DevTools, check for
+                  <span class="relative after:content-['...'] pl-4"
+                    >overlapping</span
+                  >
+                </p>
+                <div class="flex justify-between items-center pt-11">
+                  <p class="text-sm text-gray-600">
+                    Deadline:
+                    <span class="block text-lg text-[#00303C]">31 March 2025</span>
+                  </p>
+                  <button
+                    class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="task bg-white p-4 rounded-lg shadow-md">
-            <h6 class="font-medium pb-6 pl-4">Google LLC</h6>
-            <h2 class="task-title font-bold text-[#00303C] text-xl pb-8">
-              Integrate OpenAI API
-            </h2>
-            <p class="inline pl-4">
-              Debug using Chrome DevTools, check for
-              <span class="relative after:content-['...'] pl-4"
-                >overlapping</span
-              >
-            </p>
-            <div class="flex justify-between items-center pt-11">
-              <p class="text-sm text-gray-600">
-                Deadline:
-                <span class="block text-lg text-[#00303C]">31 March 2025</span>
-              </p>
-              <button
-                class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Completed
-              </button>
+            <div class="col-span-4">
+              <div class="task bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                <h6 class="bg-white rounded-lg inline-block font-medium px-2 py-1">Meta</h6>
+                <h2 class="task-title font-bold text-[#00303C] text-xl pb-4 pt-3">
+                  Add new emoji 🤲
+                </h2>
+                <p class="bg-white rounded-lg inline-block font-medium p-4">
+                  Debug using Chrome DevTools, check for
+                  <span class="relative after:content-['...'] pl-4"
+                    >overlapping</span
+                  >
+                </p>
+                <div class="flex justify-between items-center pt-11">
+                  <p class="text-sm text-gray-600">
+                    Deadline:
+                    <span class="block text-lg text-[#00303C]">31 March 2025</span>
+                  </p>
+                  <button
+                    class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="task bg-white p-4 rounded-lg shadow-md">
-            <h6 class="font-medium pb-6 pl-4">Glassdoor</h6>
-            <h2 class="task-title font-bold text-[#00303C] text-xl pb-8">
-              Improve Job Searching
-            </h2>
-            <p class="inline pl-4">
-              Debug using Chrome DevTools, check for
-              <span class="relative after:content-['...'] pl-4"
-                >overlapping</span
-              >
-            </p>
-            <div class="flex justify-between items-center pt-11">
-              <p class="text-sm text-gray-600">
-                Deadline:
-                <span class="block text-lg text-[#00303C]">31 March 2025</span>
-              </p>
-              <button
-                class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
-              >
-                Completed
-              </button>
+            <div class="col-span-4">
+              <div class="task bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                <h6 class="bg-white rounded-lg inline-block font-medium px-2 py-1">Google LLC</h6>
+                <h2 class="task-title font-bold text-[#00303C] text-xl pb-4 pt-3">
+                  Integrate OpenAI API
+                </h2>
+                <p class="bg-white rounded-lg inline-block font-medium p-4">
+                  Debug using Chrome DevTools, check for
+                  <span class="relative after:content-['...'] pl-4"
+                    >overlapping</span
+                  >
+                </p>
+                <div class="flex justify-between items-center pt-11">
+                  <p class="text-sm text-gray-600">
+                    Deadline:
+                    <span class="block text-lg text-[#00303C]">31 March 2025</span>
+                  </p>
+                  <button
+                    class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4">
+              <div class="task bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                <h6 class="bg-white rounded-lg inline-block font-medium px-2 py-1">Glassdoor</h6>
+                <h2 class="task-title font-bold text-[#00303C] text-xl pb-4 pt-3">
+                  Improve Job Searching
+                </h2>
+                <p class="bg-white rounded-lg inline-block font-medium p-4">
+                  Debug using Chrome DevTools, check for
+                  <span class="relative after:content-['...'] pl-4"
+                    >overlapping</span
+                  >
+                </p>
+                <div class="flex justify-between items-center pt-11">
+                  <p class="text-sm text-gray-600">
+                    Deadline:
+                    <span class="block text-lg text-[#00303C]">31 March 2025</span>
+                  </p>
+                  <button
+                    class="complete-btn bg-blue-500 text-white px-3 py-1 rounded"
+                  >
+                    Completed
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right Sidebar -->
-      <div class="bg-white p-4 rounded-lg shadow-md text-center">
-        <h2 class="text-lg font-bold flex justify-center items-center">
-          <img class="pr-4" src="assets/activity.png" alt="" /> Activity Log
-        </h2>
-        <button id="clear-history" class="mt-4 px-3 py-1 bg-blue-500 text-white rounded">
-          Clear History
-      </button>
-      <div id="history"></div>
-          <!-- <p>You Have Completed The Task "Title here" at "Button Click Time"</p> -->
+
+
+        <div class="col-span-3 rounded-md bg-white text-center p-4">
+          <h2 class="text-lg font-bold flex justify-center items-center">
+            <img class="pr-4" src="assets/activity.png" alt="" /> Activity Log
+          </h2>
+          <button id="clear-history" class="mt-4 px-3 py-1 bg-blue-500 text-white rounded">
+            Clear History
+        </button>
+        <div id="history"></div>
+        </div>
+        </div>
       </div>
     </div>
+
 
     <script src="script.js"></script>
   </body>

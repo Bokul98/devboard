@@ -41,7 +41,7 @@ let completedTasks = 0;
 
                     // Add to history
                     const historyItem = document.createElement("div");
-                    historyItem.classList.add("bg-slate-200", "my-2", "rounded-sm", "p-2");
+                    historyItem.classList.add("bg-slate-200", "my-2", "rounded-md", "p-2");
                     historyItem.innerHTML = `<p>You Have Completed The Task ${taskTitle} at ${currentTime}</p>`;
                     historyEl.appendChild(historyItem);
 
